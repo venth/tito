@@ -91,6 +91,10 @@ To run all tests, install these packages:
 * createrepo
 * git-annex
 
+There is also a need to install additional library via pip (pip install mock)
+for python 2.4 - 2.7
+* mock
+
 Then from the root of the project:
 
     python  ./runtests.py -vv
