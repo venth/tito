@@ -10,6 +10,8 @@ RUN yum -y install git rpm-build \
     python-devel python-nose python-setuptools python-pep8 \
     libxslt asciidoc tar createrepo which
 
+RUN pip install mock --upgrade
+
 # Remove yum metadata.
 RUN yum clean all
 
