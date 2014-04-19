@@ -11,6 +11,7 @@ RUN yum -y install git rpm-build \
     python-pip \
     libxslt asciidoc tar createrepo which
 
+RUN rpm -ql python-pip
 RUN /usr/bin/pip install mock --upgrade
 
 # Remove yum metadata.
