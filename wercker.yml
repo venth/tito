@@ -1,4 +1,5 @@
 box: wercker-labs/docker
+
 build:
   steps:
     - script:
