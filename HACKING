@@ -87,7 +87,7 @@ an authoring environment, too.
 To run all tests, install these packages:
 
 * python-nose,  python-pep8,  python-mock (for epl-6 and fedora) and rpm-python
-* python3-nose, python3-pep8,  python-mock (for epl-6 and fedora) , and rpm-python3
+* python3-nose, python3-pep8,  python3-mock (for epl-6 and fedora) , and rpm-python3
 * createrepo
 * git-annex
 
