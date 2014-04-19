@@ -11,8 +11,6 @@ RUN yum -y install git rpm-build libxslt tar \
     python3-devel python3-nose python3-setuptools python3-pep8 rpm-python3 \
     createrepo git-annex which
 
-RUN pip-python install mock --upgrade
-
 # Remove yum metadata.
 RUN yum clean all
 
