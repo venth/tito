@@ -21,6 +21,7 @@ import unittest
 
 from mock import Mock
 
+
 class CommonTests(unittest.TestCase):
 
     def test_normalize_class_name(self):
