@@ -202,11 +202,12 @@ class ExtractBugzillasTest(unittest.TestCase):
                 results[1])
 
     def test_rpmbuild_cailms_to_be_successul(self):
-        output = "Wrote: success"
+        succeeded_result = "success"
+        output = "Wrote: %s" % succeeded_result
 
         success_line = find_wrote_in_rpmbuild_output(output)
 
-        self.assertEquals(output, success_line)
+        self.assertEquals(succeeded_result, success_line[0])
 
     def test_rpmbuild_which_ended_with_error_is_described_with_the_analyzed_line(self):
         output = "some error output from rpmbuild\n" \
